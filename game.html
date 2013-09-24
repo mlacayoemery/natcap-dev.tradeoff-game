@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src = "test_js.js">
+<script src = "game.js">
 
 </script>
 </head>
@@ -9,7 +9,7 @@
 <body>
 
 <!-- Opening a HTML Form. In here will be placed the user selected values.--> 
-<form name="calculator">
+<form id="calculator">
 <table>
 <tr><td>
     <table>
@@ -17,50 +17,84 @@
 
     <tr><td valign=top>
         <table id="farms">
-        <tr><td>#</td><td><center>X</center></td><td><center>Y</center></td></tr>
-        <tr><td>1</td><td><input type="text" name="x" value="" size="2"></td>
+        <tr>
+            <td>#</td>
+            <td><center>X</center></td>
+            <td><center>Y</center></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><input type="text" name="x" value="" size="2"></td>
             <td><input type="text" name="y" value="" size=2></td>
         </tr>
-        <tr><td>2</td><td><input type="text" name="x" value="" size=2></td>
+        <tr>
+            <td>2</td>
+            <td><input type="text" name="x" value="" size=2></td>
             <td><input type="text" name="y" value="" size=2></td>
         </tr>
-        <tr><td>3</td><td><input type="text" name="x" value="" size=2></td>
+        <tr>
+            <td>3</td>
+            <td><input type="text" name="x" value="" size=2></td>
             <td><input type="text" name="y" value="" size=2></td>
         </tr>
         </table>
     </td>
     <td valign=top>     
         <table id="ranching">
-        <tr><td>#</td><td><center>X</center></td><td><center>Y</center></td></tr>
-        <tr><td>1</td><td><input type="text" name="x" value="" size=2></td>
-            <td><input type="text" name="y" value="" size=2></td>
-        </tr>
-        <tr><td>2</td><td><input type="text" name="x" value="" size=2></td>
-            <td><input type="text" name="y" value="" size=2></td>
-        </tr>
-        <tr><td>3</td><td><input type="text" name="x" value="" size=2></td>
-            <td><input type="text" name="y" value="" size=2></td>
-        </tr>
+            <tr>
+                <td>#</td>
+                <td><center>X</center></td>
+                <td><center>Y</center></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><input type="text" name="x" value="" size=2></td>
+                <td><input type="text" name="y" value="" size=2></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><input type="text" name="x" value="" size=2></td>
+                <td><input type="text" name="y" value="" size=2></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><input type="text" name="x" value="" size=2></td>
+                <td><input type="text" name="y" value="" size=2></td>
+            </tr>
         </table>
     </td>
     <td>     
         <table id="setasides">
-        <tr><td>#</td><td><center>X</center></td><td><center>Y</center></td></tr>
-        <tr><td>1</td><td><input type="text" name="x" value="" size=2></td>
-            <td><input type="text" name="y" value="" size=2></td>
-        </tr>
-        <tr><td>2</td><td><input type="text" name="x" value="" size=2></td>
-            <td><input type="text" name="y" value="" size=2></td>
-        </tr>
-        <tr><td>3</td><td><input type="text" name="x" value="" size=2></td>
-            <td><input type="text" name="y" value="" size=2></td>
-        </tr>
-        <tr><td>4</td><td><input type="text" name="x" value="" size=2></td>
-            <td><input type="text" name="y" value="" size=2></td>
-        </tr>
-        <tr><td>5</td><td><input type="text" name="x" value="" size=2></td>
-            <td><input type="text" name="y" value="" size=2></td>
-        </tr>
+            <tr>
+                <td>#</td>
+                <td><center>X</center></td>
+                <td><center>Y</center></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><input type="text" name="x" value="" size=2></td>
+                <td><input type="text" name="y" value="" size=2></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><input type="text" name="x" value="" size=2></td>
+                <td><input type="text" name="y" value="" size=2></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><input type="text" name="x" value="" size=2></td>
+                <td><input type="text" name="y" value="" size=2></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><input type="text" name="x" value="" size=2></td>
+                <td><input type="text" name="y" value="" size=2></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><input type="text" name="x" value="" size=2></td>
+                <td><input type="text" name="y" value="" size=2></td>
+            </tr>
         </table>
     </td>
 </tr>
@@ -124,10 +158,11 @@
         <td><input disabled type="txt" name="score" size=4></td>
     </tr>
 </table>
+</form>
 
-<input type="button" value="Clear" onclick="clean()">
-<input type="button" value="Example" onclick="example()">
-<input type="button" value="Calculate" onclick="getinput()">
+<button onclick="clear()">Clear</button>
+<button onclick="example()">Example</button>
+<button onclick="calculate()">Calculate</button>
 
 </body>
 </html>
