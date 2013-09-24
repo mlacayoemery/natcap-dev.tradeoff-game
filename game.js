@@ -12,13 +12,42 @@ function clear(){
 function calculate(){
 
     var f_table = document.GetElementById("farms");
-    var f_pairs = []
+    var f_pairs = [];
 
     //Only want the rows that actually contain the data, not label rows.
     for (row in [f_table.rows[1], f_table.rows[2], f_table.rows[3]]){
-        x = row[1]
-        y = row[2]
-        f_pairs.push([x, y])
+        x = row[1];
+        y = row[2];
+        f_pairs.push([x, y]);
+    }
+
+    var r_table = document.GetElementById("ranching");
+    var r_pairs = [];
+
+    for (row in [r_table.row[1], r_table.row[2], r_table.row[3]]){
+        x = row[1];
+        y = row[2];
+        r_pairs.push([x, y]);
+    }
+    
+    var sa_table = document.GetElementById("setasides");
+    var sa_pairs = [];
+
+    for (row in [sa_table.row[1], sa_table.row[2], sa_table.row[3], 
+                    sa_table.row[4], sa_table.row[5]]){
+        x = row[1];
+        y = row[2];
+        sa_pairs.push([x, y]);
+    }
+
+    var concat_pairs = function(p_array){
+    
+        new_pairs = [];
+
+        for pair in p_array(){
+
+        }
+
     }
 }
 
