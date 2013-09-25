@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src = "game.js">
+<script src="game.js">
 
 </script>
 </head>
@@ -9,11 +9,15 @@
 <body>
 
 <!-- Opening a HTML Form. In here will be placed the user selected values.--> 
-<form id="calculator">
+<div id="calculator">
 <table>
 <tr><td>
     <table>
-    <tr><td><center>Farms</center></td><td><center>Ranching</center></td><td><center>Set Asides</center></td></tr>
+        <tr>
+            <td><center>Farms</center></td>
+            <td><center>Ranching</center></td>
+            <td><center>Set Asides</center></td>
+        </tr>
 
     <tr><td valign=top>
         <table id="farms">
@@ -158,9 +162,9 @@
         <td><input disabled type="txt" name="score" size=4></td>
     </tr>
 </table>
-</form>
+</div>
 
-<button onclick="clear()">Clear</button>
+<button onclick="alert('Hello World!')">Clear</button>
 <button onclick="example()">Example</button>
 <button onclick="calculate()">Calculate</button>
 
