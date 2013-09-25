@@ -1,6 +1,6 @@
 //This is the compainion to game.html, and will be used in the backend to calculate overall scores.
 
-function clear(){
+var clear = function(){
 
     var inputs = document.GetElementsByTagName('input');
 
@@ -9,7 +9,7 @@ function clear(){
     }
 }
 
-function calculate(){
+var calculate = function(){
 
     var f_table = document.GetElementById("farms");
     var f_pairs = [];
