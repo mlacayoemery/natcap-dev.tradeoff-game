@@ -11,50 +11,51 @@
 <!-- Opening a HTML Form. In here will be placed the user selected values.--> 
 <div id="calculator">
 <table>
-<tr><td>
-    <table>
-        <tr>
-            <td><center>Farms</center></td>
-            <td><center>Ranching</center></td>
-            <td><center>Set Asides</center></td>
-        </tr>
-
-    <tr><td valign=top>
-        <table id="farms">
-        <tr>
-            <td>#</td>
-            <td><center>X</center></td>
-            <td><center>Y</center></td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td><input type="text" name="x" value="" size="2"></td>
-            <td><input type="text" name="y" value="" size=2></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td><input type="text" name="x" value="" size=2></td>
-            <td><input type="text" name="y" value="" size=2></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td><input type="text" name="x" value="" size=2></td>
-            <td><input type="text" name="y" value="" size=2></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td><input type="text" name="x" value="" size=2></td>
-            <td><input type="text" name="y" value="" size=2></td>
-        </tr>
-        </table>
-    </td>
-    <td valign=top>     
-        <table id="ranching">
-            <tr>
+  <tr>
+    <td>
+      <table>
+	<tr>
+          <td><center>Farms</center></td>
+          <td><center>Ranching</center></td>
+          <td><center>Set Asides</center></td>
+	</tr>
+	
+	<tr><td valign=top>
+            <table id="farms">
+              <tr>
+		<td>#</td>
+		<td><center>X</center></td>
+		<td><center>Y</center></td>
+              </tr>
+              <tr>
+		<td>1</td>
+		<td><input type="text" name="x" value="" size="2"></td>
+		<td><input type="text" name="y" value="" size=2></td>
+              </tr>
+              <tr>
+		<td>2</td>
+		<td><input type="text" name="x" value="" size=2></td>
+		<td><input type="text" name="y" value="" size=2></td>
+              </tr>
+              <tr>
+		<td>3</td>
+		<td><input type="text" name="x" value="" size=2></td>
+		<td><input type="text" name="y" value="" size=2></td>
+              </tr>
+              <tr>
+		<td>4</td>
+		<td><input type="text" name="x" value="" size=2></td>
+		<td><input type="text" name="y" value="" size=2></td>
+              </tr>
+            </table>
+	  </td>
+	  <td valign=top>     
+            <table id="ranching">
+              <tr>
                 <td>#</td>
                 <td><center>X</center></td>
                 <td><center>Y</center></td>
-            </tr>
+              </tr>
             <tr>
                 <td>1</td>
                 <td><input type="text" name="x" value="" size=2></td>
@@ -132,11 +133,11 @@
         <td></td>
         <td></td>
         <td></td>
-        <td><input disabled type="text" name="a_total" size=4></td>
+        <td><input disabled type="text" id="a_total" size=4></td>
         <td>+</td>
-        <td><input disabled type="txt" name="r_total" size=4></td>
+        <td><input disabled type="txt" id="r_total" size=4></td>
         <td>=</td>
-        <td><input disabled type="txt" name="pos_total" size=4></td></tr>
+        <td><input disabled type="txt" id="pos_total" size=4></td></tr>
                                                         
      <tr>
         <td><font color="#FF0000">Habitat Qual.</font></td>
@@ -150,15 +151,15 @@
         <td></td>
      </tr>
      <tr>
-        <td><input disabled type="text" name="hq_total" size=4></td>
+        <td><input disabled type="text" id="hq_total" size=4></td>
         <td>+</td>
-        <td><input disabled type="txt" name="c_total" size=4></td>
+        <td><input disabled type="txt" id="c_total" size=4></td>
         <td>+</td>
-        <td><input disabled type="txt" name="hf_total" size=4></td>
+        <td><input disabled type="txt" id="hf_total" size=4></td>
         <td>+</td>
-        <td><input disabled type="txt" name="wq_total" size=4></td>
+        <td><input disabled type="txt" id="wq_total" size=4></td>
         <td>=</td>        
-        <td><input disabled type="txt" name="neg_total" size=4></td>
+        <td><input disabled type="txt" id="neg_total" size=4></td>
     </tr>
     <tr>
         <td></td>
@@ -169,7 +170,7 @@
         <td></td>
         <td align=right><b>Net Score<b></td>
         <td></td>
-        <td><input disabled type="txt" name="score" size=4></td>
+        <td><input disabled type="txt" id="score" size=4></td>
     </tr>
 </table>
 </div>
